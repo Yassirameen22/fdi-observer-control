@@ -1,50 +1,52 @@
 
-# Secure Observer-Based Control under FDI Attacks in Wireless Industrial CPS
+# FDI Observer Simulator: Secure State Estimation in Wireless CPS
 
-This project demonstrates a simulation framework for secure state estimation using:
-- Luenberger Observer
-- Sliding Mode Observer (SMO)
-under conditions of:
-- Additive False Data Injection (FDI)
-- Wireless channel impairments (packet loss)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15636698.svg)](https://doi.org/10.5281/zenodo.15636698)
 
-## 📦 Contents
+This repository contains a full simulation framework for secure observer-based estimation in wireless industrial cyber-physical systems (CPS) under false data injection (FDI) attacks and probabilistic packet loss.
 
-- `observer_notebook_full.ipynb` : Full Jupyter Notebook with simulation, observer comparison, and sensitivity analysis.
-- `gain_synthesis_lmi.py` : Observer gain computation using Linear Matrix Inequalities (CVXPY).
-- `sliding_mode_observer.py` : SMO implementation.
-- `requirements.txt` : Required Python packages.
-
-## 📈 Features
-
-- Luenberger and SMO implementations
-- Observer gain via LMI with `cvxpy`
-- Simulation with packet drop and additive attack
-- Sensitivity analysis with heatmap output
+## 📦 Features
+- Luenberger Observer and Sliding Mode Observer (SMO)
+- Observer gain synthesis using Linear Matrix Inequalities (LMI via CVXPY)
+- FDI attack modeling and wireless packet drop simulation
+- Sensitivity heatmap analysis
+- Fully modular Python + Jupyter-based framework
 
 ## 🚀 Getting Started
 
-Install required packages:
 ```bash
 pip install -r requirements.txt
-```
-
-Then launch Jupyter:
-```bash
 jupyter notebook observer_notebook_full.ipynb
 ```
 
-## 🔗 Citation
+## 🧪 Repository Contents
+
+| File                           | Description                                      |
+|--------------------------------|--------------------------------------------------|
+| `observer_notebook_full.ipynb` | Full simulation notebook                         |
+| `gain_synthesis_lmi.py`        | Observer gain computation using LMI             |
+| `sliding_mode_observer.py`     | SMO implementation                              |
+| `requirements.txt`             | Python dependencies                             |
+| `LICENSE`                      | MIT License                                      |
+| `A_diagram_illustrates_...png` | System architecture diagram (optional)          |
+
+---
+
+## 📄 Cite This Project
+
+If you use this simulator in your research or teaching, please cite:
 
 ```bibtex
-@article{al-karawi2025secure,
-  author  = {Yassir Al-Karawi and Hamed Al-Raweshidy},
-  title   = {Secure Observer-Based Control in Wireless Industrial CPS under Probabilistic FDI Attacks},
-  journal = {IEEE Transactions on Industrial Cyber-Physical Systems},
-  year    = {2025},
-  note    = {Under Review}
+@software{al-karawi2025fdiobserver,
+  author       = {Al-Karawi, Yassir},
+  title        = {{FDI Observer Simulator: Secure State Estimation in Wireless CPS}},
+  year         = 2025,
+  publisher    = {Zenodo},
+  version      = {1.0.0},
+  doi          = {10.5281/zenodo.15636698},
+  url          = {https://doi.org/10.5281/zenodo.15636698}
 }
 ```
 
-## 🧠 License
-MIT License. Feel free to modify and extend.
+## 🔒 License
+This project is licensed under the MIT License.

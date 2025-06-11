@@ -1,0 +1,28 @@
+{
+    "title": "Secure Observer-Based Control in Wireless Industrial CPS under Probabilistic FDI Attacks",
+    "upload_type": "software",
+    "description": "This repository contains a full simulation framework for secure state estimation in wireless industrial CPS under false data injection attacks and communication impairments. It includes both Luenberger and Sliding Mode Observers, gain synthesis via LMI, sensitivity analysis, and Jupyter-based reproducibility.",
+    "creators": [
+        {
+            "name": "Al-Karawi, Yassir",
+            "affiliation": "Brunel University London",
+            "orcid": "0000-0002-XXXX-XXXX"
+        },
+        {
+            "name": "Al-Raweshidy, Hamed",
+            "affiliation": "Brunel University London"
+        }
+    ],
+    "keywords": [
+        "FDI attacks",
+        "Wireless CPS",
+        "Observer design",
+        "Sliding Mode Observer",
+        "Luenberger Observer",
+        "Cybersecurity",
+        "Jupyter simulation"
+    ],
+    "license": "MIT",
+    "access_right": "open",
+    "version": "1.0.0"
+}
